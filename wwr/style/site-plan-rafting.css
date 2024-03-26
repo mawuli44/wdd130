@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
 
+/* Universal selector with box model properties */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: var(--paragraph-font);
@@ -8,30 +14,30 @@ body {
 }
 
 :root {
-  --primary-color: #XXXXXX;
-  --secondary-color: #XXXXXX;
-  --accent1-color: #XXXXXX;
-  --accent2-color: #XXXXXX;
+  --primary-color: #396e94;
+  --secondary-color: #e7c24f;
+  --accent1-color: #a43312;
+  --accent2-color: #381d2a;
 
-  --heading-font: '______', serif;
-  --paragraph-font: '______', serif;
+  --heading-font: 'Arial', sans-serif; /* Example font family */
+  --paragraph-font: 'Arial', sans-serif; /* Example font family */
 
-  --nav-background-color: #XXXXXX;
-  --nav-link-color: #XXXXXX;
-  --nav-hover-link-color: #XXXXXX;
-  --nav-hover-background-color: #XXXXXX;
+  --nav-background-color: #396e94;
+  --nav-link-color: #e7c24f;
+  --nav-hover-link-color: #a43312;
+  --nav-hover-background-color: #381d2a; 
 }
 
 body {
-    f______: var(--paragraph-font);
-    m______: ______;
-    p______: ______;
-  }
-         
+  font-family: var(--paragraph-font);
+  margin: 0;
+  padding: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-  }
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
 
 header {
   padding: 20px;
@@ -62,4 +68,32 @@ nav a:link, nav a:visited {
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+}
+
+/* Class Selectors section */
+.box {
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, .1);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
+}
+
+/* Float profile image to the right */
+main img {
+  float: right;
+}
+
+/* Position the overlay heading on the image */
+aside {
+  position: relative;
+}
+
+aside h2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
 }
