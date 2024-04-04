@@ -1,37 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
 
-/* Universal selector with box model properties */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: var(--paragraph-font);
-  max-width: 960px;
-  padding: 20px;
-}
-
+/* Root variables */
 :root {
   --primary-color: #396e94;
   --secondary-color: #e7c24f;
   --accent1-color: #a43312;
   --accent2-color: #381d2a;
-
+  
   --heading-font: 'Arial', sans-serif; /* Example font family */
   --paragraph-font: 'Arial', sans-serif; /* Example font family */
-
+  
   --nav-background-color: #396e94;
   --nav-link-color: #e7c24f;
   --nav-hover-link-color: #a43312;
   --nav-hover-background-color: #381d2a; 
 }
 
+/* General styles */
 body {
   font-family: var(--paragraph-font);
   margin: 0;
   padding: 0;
+  max-width: 960px;
+  padding: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -39,15 +30,17 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primary-color);
 }
 
+p {
+  padding: 25px;
+}
+
+/* Header styles */
 header {
   padding: 20px;
   background-color: var(--accent1-color);
 }
 
-p {
-  padding: 25px;
-}
-
+/* Navigation styles */
 nav {
   background-color: var(--nav-background-color);
   font-size: 1.2rem;
@@ -61,7 +54,8 @@ nav a {
   padding: 1rem;
 }
 
-nav a:link, nav a:visited {
+nav a:link,
+nav a:visited {
   color: var(--nav-link-color);
 }
 
@@ -73,7 +67,7 @@ nav a:hover {
 /* Class Selectors section */
 .box {
   margin: 1rem;
-  border: 1px solid rgba(0, 0, 0, .1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1rem;
   background-color: #ddd;
   color: #000;
@@ -96,4 +90,3 @@ aside h2 {
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 5px;
-}
