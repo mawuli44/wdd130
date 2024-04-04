@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
 
-/* Root variables */
+body {
+  font-family: var(--paragraph-font);
+  margin: 0;
+  max-width: 960px;
+  padding: 20px;
+}
+
 :root {
   --primary-color: #396e94;
   --secondary-color: #e7c24f;
@@ -17,26 +23,24 @@
 }
 
 /* General styles */
-body {
-  font-family: var(--paragraph-font);
-  margin: 0;
-  max-width: 960px;
-  padding: 20px;
-}
+  body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+  }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-p {
-  padding: 25px;
-}
-
-/* Header styles */
 header {
   padding: 20px;
   background-color: var(--accent1-color);
+
+
+p {
+  padding: 25px;
 }
 
 /* Navigation styles */
@@ -54,55 +58,11 @@ nav a {
   margin: 0; /* Reset margin */
 }
 
-nav a:link,
-nav a:visited {
+nav a:link,nav a:visited {
   color: var(--nav-link-color);
 }
 
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
-}
-
-/* Class Selectors section */
-.box {
-  margin: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  background-color: #ddd;
-  color: #000;
-}
-
-/* Float profile image to the right */
-main img {
-  float: right;
-}
-
-/* Position the overlay heading on the image */
-aside {
-  position: relative;
-}
-
-aside h2 {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 5px;
-}
-
-/* @font-face declarations */
-@font-face {
-  font-weight: 400;
-  font-style: normal;
-  font-family: 'circular'; /* Added quotes around font name */
-  src: url('https://fonts.googleapis.com/css2?family=font-name&display=swap') format('woff2'); /* Added correct font URL */
-}
-
-@font-face {
-  font-weight: 700;
-  font-style: normal;
-  font-family: 'circular'; /* Added quotes around font name */
-  src: url('https://fonts.googleapis.com/css2?family=optional-2nd-font-name&display=swap') format('woff2'); /* Added correct font URL */
 }
