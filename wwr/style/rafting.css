@@ -1,37 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-/* CSS Variables */
+/* Define CSS Variables */
 :root {
-  --primary-color: #396e94;
-  --secondary-color: #e7c24f;
-  --accent1-color: #a43312;
-  --accent2-color: #381d2a;
-
-  --heading-font: 'Arial', sans-serif;
-  --paragraph-font: 'Arial', sans-serif;
-
-  --nav-background-color: #396e94; /* Update with your color */
-  --nav-link-color: #e7c24f; /* Update with your color */
-  --nav-hover-link-color: #a43312; /* Update with your color */
-  --nav-hover-background-color: #381d2a; /* Update with your color */
+    --primary-color: #007bff; /* Example color */
+    --secondary-color: #6c757d; /* Example color */
+    --text-color: #333;
 }
 
-/* Reset and General Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Basic Styles */
 body {
-  font-family: var(--paragraph-font);
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  color: #333; /* Default text color */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.7); /* Example background color with opacity */
+    padding: 20px;
+}
+
+article {
+    position: absolute;
+    top: 400px;
+    right: 20px;
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, 0.7); /* Example background color with opacity */
+    padding: 20px;
+}
+
+article img {
+    float: top;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.sociallinks {
+    margin-top: 10px;
+}
+
+.sociallinks a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.sociallinks img {
+    width: 30px;
+    height: 30px;
 }
