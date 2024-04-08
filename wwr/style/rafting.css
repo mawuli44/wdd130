@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
+* {
+    margin: O;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
 /* Define CSS Variables */
 :root {
     --primary-color: #007bff; /* Example color */
@@ -10,6 +17,7 @@
 /* Basic Styles */
 body {
     font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    font-size: 16px;
     margin: 0;
     padding: 0;
     color: var(--text-color);
@@ -52,7 +60,7 @@ main {
 
 .hero h1 {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -71,9 +79,9 @@ article {
 }
 
 article img {
-    float: top;
-    width: 10px;
-    height: 10px;
+    float: right;
+    width: 100px;
+    height: 100px;
     margin-left: 10px;
 }
 
@@ -82,7 +90,7 @@ section {
 }
 
 h2 {
-    color: var(--primary-color);
+    color: blue;
 }
 
 footer {
