@@ -33,8 +33,8 @@ nav a {
  }   
 
 header, footer .grid {
-    max-width: 840px;
     margin: 0 auto;
+    max-width: 840px;
 }
     
 main img {
@@ -49,10 +49,7 @@ main img {
 p {
     margin: 1rem;
 }
-header, footer {
-  max-width: 840px;
-  margin: 0 auto;
-}
+
 
 main {
     max-width : 840px;
