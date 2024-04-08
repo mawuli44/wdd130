@@ -101,9 +101,10 @@ p {
     padding: 10px;
   }
 
-  .hero article p,
+  .hero article p, 
   .hero article img {
     width: 100%;
     float: none;
     margin: 0;
   }
+}
