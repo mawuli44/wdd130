@@ -32,7 +32,7 @@ nav a {
     padding: .5rem
  }   
 
-header, footer {
+header, footer .grid {
     max-width: 840px;
     margin: 0 auto;
 }
@@ -56,6 +56,11 @@ header, footer {
 
 main {
     max-width : 840px;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
 
 aside {
