@@ -1,5 +1,5 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* CSS Variables */
 :root {
@@ -21,7 +21,7 @@ a {
 }
 
 /* Heading and Paragraph Styles */
-h1,h2,h3,h4,h5,h6  {
+h1, h2, h3, h4, h5, h6 {
   color: var(--primary-color);
   margin: 0;
 }
@@ -32,7 +32,7 @@ p {
 }
 
 /* Social Media Links */
-.social-links a {
+.sociallinks a {
   text-decoration: none;
 }
 
@@ -101,10 +101,95 @@ p {
     padding: 10px;
   }
 
-  .hero article p, 
+  .hero article p,
   .hero article img {
     width: 100%;
     float: none;
     margin: 0;
   }
+}
+
+/* Header Styles */
+.header {
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 120px 1fr 2fr;
+  align-items: center;
+  max-width: 1000px;
+  border-bottom: 1px solid #ccc;
+  color: white;
+}
+
+.logo img {
+  margin: 0 0.25rem 0 1rem;
+  width: 64px;
+  height: auto;
+  max-width: 150px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav a {
+  color: white;
+  margin-left: 20px;
+}
+
+/* History Section Styles */
+.history {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.history h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+/* Adventures Section Styles */
+.adventures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.adventures figure {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.adventures img {
+  max-width: 100%;
+}
+
+.adventures figcaption {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.sociallinks {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.sociallinks a {
+  margin-left: 10px;
+}
+
+.sociallinks img {
+  max-width: 30px;
+  height: auto;
 }
