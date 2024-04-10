@@ -8,20 +8,20 @@ body {
 
 h1 {
     text-align: center;
-    color: blue;
+    color: #0056b3;
 }
 
 form {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px; /* Added padding */
-    border: 1px solid #ccc; /* Added border */
+    border: 5px solid #ccc; /* Added border */
     border-radius: 10px; /* Added border radius */
     background-color: #f9f9f9; /* Added background color */
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 label {
@@ -49,10 +49,14 @@ button[type="submit"] {
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 2px;
     cursor: pointer;
 }
 
 button[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+.indent {
+    padding-bottom: 2rem;
 }
