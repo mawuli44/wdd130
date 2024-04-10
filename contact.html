@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - OCEAN WATER RAFTING</title>
+  <meta name="description" content="Contact Ocean Water Rafting for inquiries, reservations, and suggestions.">
+  <meta name="author" content="Mawuli Ayikpa">
+  <link rel="stylesheet" href="styles/rafting.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="images/life_logo.jpg" alt="Rafting Company Logo">
+    </div>
+    <!-- Navigation -->
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Company Information -->
+    <section class="company-info">
+      <h2>Contact Ocean Water Rafting</h2>
+      <p><strong>Address:</strong> 123 River Rafting Way, Adventure City, RAFT123</p>
+      <p><strong>Phone:</strong> 1-800-RAFTING, 1-800-723-8464</p>
+      <p><strong>Email:</strong> info@oceanwaterrafting.com</p>
+      <!-- Embedded Google Map -->
+      <div class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193534.71917773145!2d-74.00474024435467!3d40.71277298875055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25901c7bb41c9%3A0x3beb632b3cd03a5a!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sca!4v1611010609289!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- Employee Profiles -->
+    <section class="employee-profiles">
+      <h2>Meet Our Team</h2>
+      <div class="employee">
+        <img src="images/employee1.jpg" alt="Employee 1">
+        <p><strong>John Doe</strong><br>Lead Rafting Guide</p>
+      </div>
+      <div class="employee">
+        <img src="images/employee2.jpg" alt="Employee 2">
+        <p><strong>Jane Smith</strong><br>Customer Relations</p>
+      </div>
+      <div class="employee">
+        <img src="images/employee3.jpg" alt="Employee 3">
+        <p><strong>Michael Johnson</strong><br>Adventure Specialist</p>
+      </div>
+    </section>
+
+    <!-- User Comment Form -->
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="purpose">Purpose of Message:</label><br>
+          <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+          <label for="general">General Inquiry</label><br>
+          <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+          <label for="reservation">Reservation Question</label><br>
+          <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+          <label for="suggestion">Website Suggestion</label><br>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+          <label for="newsletter">Please subscribe me to the monthly newsletter</label><br>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Ocean Water Rafting | Designed by Mawuli Ayikpa</p>
+    <!-- Social Media Icons -->
+    <nav class="sociallinks">
+      <a href="https://facebook.com">
+        <img src="images/face.png" alt="Facebook">
+      </a>
+      <a href="https://twitter.com">
+        <img src="images/twitter.jpeg" alt="Twitter">
+      </a>
+      <a href="https://instagram.com">
+        <img src="images/instagram.jpeg" alt="Instagram">
+      </a>
+    </nav>
+  </footer>
+</body>
+</html>
