@@ -13,21 +13,26 @@
     <h1>Basic HTML and CSS Quiz</h1>
     <form id="quizForm">
         <!-- Question 1: Text type input (fill in the blank) -->
-        <div class="form-group">
-            <h2>Fill in the blank:</h2>
-            <label for="q1">1 HTML stands for _______</label>
-            <input type="text" id="q1" name="q1" required>
-        </div>
+    <div class="form-group">
+        <ul class="box indent">
+        <h2>Fill in the blank:</h2>
+        <label for="q1"> 
+        <p>1. HTML stands for _______</p> 
+        <input type="text" id="q1" name="q1" required>
+    </div>
         
         <!-- Question 2: Textarea (short answer) -->
         <div class="form-group">
-            <label for="q2">2. Briefly explain the purpose of CSS.</label>
+        <ul class="box indent">
+            <label for="q2"> 
+            <p>2. Briefly explain the purpose of CSS</p>
             <textarea id="q2" name="q2" rows="4" required></textarea>
-        </div>
-        
+    </div>
         <!-- Question 3: Select element (dropdown) -->
         <div class="form-group">
-            <label for="q3">3. What does CSS stand for?</label>
+        <ul class="box indent">
+        <label for="q3">
+            <p>3. What does CSS stand for?</p>
             <select id="q3" name="q3" required>
                 <option value="" selected disabled>Choose One...</option>
                 <option value="cascading">Cascading Style Sheets</option>
@@ -38,12 +43,15 @@
         
         <!-- Question 4: Number type input (integer answer) -->
         <div class="form-group">
-            <label for="q4">4. How many heading tags are available in HTML?</label>
+        <ul class="box indent">
+            <label for="q4">
+            <p>How many heading tags are available in HTML</p>
             <input type="number" id="q4" name="q4" min="1" required>
         </div>
         
         <!-- Submit Button -->
         <div class="form-group">
+        <ul class="box indent">
             <button type="submit">Submit Quiz</button>
         </div>
     </form>
