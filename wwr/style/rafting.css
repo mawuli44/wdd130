@@ -16,10 +16,6 @@ body {
   color: var(--text-color);
 }
 
-.content {
-  max-width: 960px;
-  margin: auto;
-
 a {
   text-decoration: none;
 }
